@@ -1,0 +1,172 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.fondo {
+  background-image: url("Imagenes/dcef01af4fe7d2439a2c58c589ec4ca3.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.overlay h1,
+.overlay p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.boton-ayuda {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-ayuda:hover {
+  background-color: #218838;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  z-index: 2;
+}
+
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 15px 20px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.tarjeta h2 {
+  color: #0077cc;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  .menu-icon {
+    top: 15px;
+    right: 20px;
+  }
+
+  .menu {
+    right: 20px;
+    width: 80%;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+}
