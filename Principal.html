@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sitio informativo sobre la escasez de agua potable en Villa de Etla." />
+  <meta name="author" content="Tu Nombre" />
+  <title>Falta de Agua Potable</title>
+  <link rel="stylesheet" href="Static/Principal.css" />
+</head>
+<body>
+  <div class="fondo">
+    <div class="overlay">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label> 
+      <nav class="menu">
+        <a href="Template/Principal.html">INICIO</a>
+        <a href="Template/Informacion.html">INFORMACIÓN</a>
+        <a href="Template/Recomendaciones.html">RECOMENDACIONES</a>
+      </nav>
+
+      <h1>Escasez de Agua Potable en la Comunidad "Villa de Etla"</h1>
+      <p>
+        Este sitio aborda la problemática de la escasez de agua potable, destacando sus causas, impactos y soluciones.
+        Queremos concienciar sobre el uso responsable del agua y promover acciones para su conservación.
+      </p>
+
+      <button onclick="mostrarMensaje()" class="boton-ayuda">¿Cómo puedo ayudar?</button>
+    </div>
+  </div>
+
+  <section class="tarjetas">
+    <div class="tarjeta">
+      <h2>Causas</h2>
+      <p>Uso excesivo, escasa infraestructura, contaminación y cambio climático.</p>
+    </div>
+    <div class="tarjeta">
+      <h2>Consecuencias</h2>
+      <p>Falta de acceso al agua, enfermedades, y problemas en la agricultura.</p>
+    </div>
+    <div class="tarjeta">
+      <h2>Soluciones</h2>
+      <p>Ahorro en casa, recolección de lluvia, educación ambiental y denuncias.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Conciencia Hídrica | Hecho por Tu Nombre</p>
+    <p>Contacto: agua@villadeetla.mx</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      alert("Puedes ayudar cuidando el agua, reportando fugas y compartiendo información.");
+    }
+  </script>
+</body>
+</html>
